@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WBR Radio</title>
+    <meta name="keywords" content="Country band from Halifax, Nova ScotiaWayne, Graham, Country music, Halifax, Nova Scotia"/>
+    <style>
+        .menuBody {
+            background-color: #ff3300;
+        }
+
+        .contentBody {
+            background-color: #000066;
+            color: white;
+            text-align: justify;
+        }
+
+        .contentBody a {
+            color: yellow;
+        }
+
+        .menuContent {
+            background-color: black;
+            padding: 1ex;
+        }
+
+        .menuContent ul {
+            padding-left: 0px;
+            list-style-type: none;
+        }
+
+        .menuContent ul li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .menuContent a {
+            color: grey;
+        }
+
+        h1 {
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .welcomeImage {
+            margin-left: 32px;
+            margin-right: 140px;
+            margin-top: 40px;
+            text-align: left;
+            font-weight: bold;
+            font-style: italic;
+            font-family: arial, sans-serif;
+            filter: DropShadow(Color=#111111, OffX=1, OffY=1);
+        }
+
+        .imageBanner {
+            font-size: 150%;
+            margin-top: 192px;
+            margin-left: 8px;
+            font-weight: bold;
+            font-style: italic;
+            filter: DropShadow(Color=#111111, OffX=1, OffY=1);
+        }
+
+        table.center-table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .imageHeight img {
+            height: 180px;
+        }
+
+        /* song list */
+
+        .songList td {
+            vertical-align: top;
+            padding: 2px;
+            text-align: left;
+        }
+
+        .songList caption {
+            font-size: 200%;
+        }
+
+        .songList table tr:nth-child(odd) {
+            background-color: #deeaff;
+            color: black;
+        }
+
+        .songList table tr:nth-child(even) {
+            background-color: #ededed;
+            color: black;
+        }
+
+        #radio-logo {
+            height: 274px;
+            background-size: contain;
+            background-image: url(images/roland_vr_730_v_combo_73_note_keyboard_1365781.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-y: 50px;
+        }
+
+        #radio-logo .heading {
+            color: #ffeb00;
+            padding-top: 25px;
+            font-size: 120%;
+        }
+
+        #radio-logo .footing1 {
+            color: #ffee00;
+            position: relative;
+            bottom: -130px;
+            font-size: 110%;
+        }
+
+        #radio-logo .footing2 {
+            color: #ffee00;
+            position: relative;
+            bottom: -130px;
+            font-size: 110%;
+            left: 50px;
+        }
+
+        #radio-gap {
+            width: 40px;
+        }
+
+        #song-info td {
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #song-info td .label {
+            font-size: 125%;
+            padding-right: 18px;
+            color: #aaa;
+        }
+
+        #song-info td .cc_streaminfo {
+            font-size: 140%;
+            color: #ff3300;
+            text-shadow: 0 0 20px;
+            font-weight: bold;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        form#request-form {
+            margin-top: 2em;
+            margin-right: auto;
+            margin-left: auto;
+            width: fit-content;
+        }
+
+        form#request-form input[type='text'] {
+            width: 35em;
+        }
+
+        table#requests {
+            margin-top: 2em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table#requests thead th {
+            padding-bottom: 0.5em;
+        }
+
+        table#requests tbody td {
+            padding: 8px;
+        }
+
+        table#requests tbody td:nth-child(1) {
+            padding-right: 2em;
+        }
+
+        table#requests tbody tr:nth-child(even) {
+            background-color: #00005f;
+        }
+        table#requests tbody tr:nth-child(odd) {
+            background-color: #00007f;
+        }
+    </style>
+    <script type="text/javascript" src="http://nap.casthost.net:2199/system/streaminfo.js"></script>
+</head>
+<body class="contentBody">
+<table class="center-table">
+    <tr id="song-info">
+        <td colspan="3">
+            <h1>WBR Radio</h1>
+            <span class="label">Now Playing:</span> <span class="cc_streaminfo" data-type="song" data-username="circuitb">Loading ...</span>
+        </td>
+    </tr>
+    <tr style="vertical-align: top;">
+        <td class="center">
+            <iframe style="width: 330px; height: 270px;" src="https://nap.casthost.net/proxy/circuitb/stream"></iframe>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
