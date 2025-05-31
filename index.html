@@ -206,6 +206,8 @@
             margin-bottom: 24px;
         }
     </style>
+<!--    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>-->
+    <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
     <script type="text/javascript" src="https://nap.casthost.net:2199/system/streaminfo.js"></script>
 </head>
 <body class="contentBody">
@@ -233,9 +235,35 @@
             <span class="label">Now Playing:</span> <span class="cc_streaminfo" data-type="song" data-username="circuitb">Loading ...</span>
         </td>
     </tr>
+    <tr>
+        <td style="text-align: center">
+            <div style="display: inline-block;">
+                <!-- Muses Radio Player Embed Code -->
+
+                <script type="text/javascript">
+                    MRP.insert({
+                        'url': 'https://nap.casthost.net/proxy/circuitb/stream',
+                        'volume': 65,
+                        'autoplay': true,
+                        'buffering': 0,
+                        'title': 'WBR Radio',
+                        // 'welcome':'97.7 Music - 90\'s Hits',
+                        'bgcolor': 'rgb(255,255,255)',
+                        'metadataMode': 'shoutcast',
+                        'metadataInterval':15,
+                        'skin': 'mcclean',
+                        'width': 180,
+                        'height': 60
+                    });
+                </script>
+
+                <!-- End of Muses Radio Player Embed Code -->
+            </div>
+        </td>
+    </tr>
     <tr style="vertical-align: top;">
         <td class="center">
-            <iframe style="width: 330px; height: 270px;" src="https://nap.casthost.net/proxy/circuitb/stream"></iframe>
+<!--            <iframe style="width: 330px; height: 270px;" src="https://nap.casthost.net/proxy/circuitb/stream"></iframe>-->
         </td>
     </tr>
 </table>
